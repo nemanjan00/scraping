@@ -1,0 +1,11 @@
+{
+  "name": "primer01-scraper",
+  "version": "1.0.0",
+  "description": "Scraper za primer 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nemanja Nedeljković <nemanjan00@gmail.com> (https://nemanja.top/)",
+  "license": "MIT"
+}
