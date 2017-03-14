@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nemanja Nedeljković <nemanjan00@gmail.com> (https://nemanja.top/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
 }
