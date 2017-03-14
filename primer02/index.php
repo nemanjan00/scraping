@@ -1,3 +1,10 @@
+<?php
+$id = 0;
+
+if(isset($_GET["id"])){
+	$id = $_GET["id"];
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,13 +16,18 @@
 		<ul>
 <?php
 for($i = 1; $i <= 10; $i++){
-	if($_GET["id"] == $i){
 ?>
-			<li><a href="/item.php?id=<?=$i?>">Item <?=$i;?></a></li>
+			<li>Item <?=$id * 10 + $i;?></li>
 <?php
-	}
 }
 ?>
 		</ul>
+<?php
+if($id < 10){
+?>
+		<a href="/?id=<?=$id + 1;?>">Next page</a>
+<?php
+}
+?>
 	</body>
 </html>

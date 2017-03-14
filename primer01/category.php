@@ -9,9 +9,11 @@
 		<ul>
 <?php
 for($i = 1; $i <= 10; $i++){
+	if($_GET["id"] == $i){
 ?>
-			<li><a href="/category.php?id=<?=$i?>">Category <?=$i;?></a></li>
+			<li><a href="/category.php?id=<?=$i?>">Item <?=$i;?></a></li>
 <?php
+	}
 }
 ?>
 		</ul>
