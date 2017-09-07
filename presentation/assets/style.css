@@ -1,0 +1,61 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css";
+
+/*Colors*/
+
+.remark-slide-content {
+	background-color: #002b36 !important;
+	color: #859900;
+	font-size: 1.5em;
+}
+
+/*Text*/
+
+body {
+	font-family: Hack, monospace;
+}
+
+h1 {
+	line-height: 0.8em;
+}
+
+h2 {
+	font-size: 1.5em!important;
+}
+
+/*Text colors*/
+
+h1 {
+	color: #b58900;
+}
+
+h2 {
+	color: #d33682;
+}
+
+h3 {
+	color: #cb4b16;
+}
+
+/*Links*/
+
+a {
+	color: #dc322f;
+}
+
+/*Footnote*/
+
+.footnote {
+	position: absolute;
+	bottom: 3em;
+	right: 5em;
+}
+
+/*Code*/
+
+.remark-code {
+	border-style: dashed;
+	border-color: #fff;
+	border-width: 1px;
+}
+

@@ -1,0 +1,10 @@
+port: 6275
+dest: build
+source: slides.md
+assets: ['assets']
+title: 'Scraping basics'
+css: '@import "assets/style.css";'
+remarkConfig: {
+    ratio: "16:9",
+    highlightStyle: "solarized-dark"
+}
