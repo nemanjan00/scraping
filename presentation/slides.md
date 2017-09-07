@@ -11,7 +11,7 @@ class: center, middle
 .footnote[<i class="fa fa-pencil fa-fw"></i> Created by [nemanjan00](https://github.com/nemanjan00/)]
 ---
 layout: false
-###Who am I? <i class="fa fa-user fa-fw"></i> 
+### What am I? <i class="fa fa-user fa-fw"></i> 
 
  * Web developer
 
