@@ -37,7 +37,7 @@ layout: false
 
 ### What this talk is not about? 
 
- * Scraping frameworks
+ * Scraping frameworks (most of which are very slow)
 
  * Every single way you can scrap something
 
@@ -129,3 +129,9 @@ forEach($listItems as $item){
 
 .footnote[[Example](https://github.com/nemanjan00/scraping/tree/master/example2) and [scraper](https://github.com/nemanjan00/scraping/tree/master/example2-scraper)]
 ---
+layout: true
+class: center, middle
+---
+
+# Now ask questions or/and go away
+## nemanjan00@gmail.com
