@@ -69,6 +69,16 @@ layout: false
 
 ---
 
+### Where can I see initial HTML? 
+
+ * Go to page
+
+ * Press Ctrl + U (chrome) / Type "view-source:" before address (firefox)
+
+ * Ctrl+Shift+I, Network tab and refresh
+
+---
+
 ### HTML parsing
 
  * Do not use parsers
