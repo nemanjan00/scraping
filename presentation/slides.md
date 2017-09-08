@@ -35,7 +35,41 @@ layout: false
 
 ---
 
-### Single page scraping
+### What this talk is not about? 
+
+ * Scraping frameworks
+
+ * Every single way you can scrap something
+
+ * Theoretical talk
+
+---
+
+### What is this talk about? 
+
+ * Technology you are going to have to deal with
+
+ * Tools for understanding what you are dealing with
+
+ * Ways for scraping that turned out to be working for me
+
+ * Discussion about which solution is working for which problem
+
+---
+
+### How does data get to your browser
+
+ * Initial HTML
+
+ * HTTP Request (AJAX)
+
+ * WebSockets
+
+ * Local storage (LocalStorage, IndexedDB, WebSQL...)
+
+---
+
+### HTML parsing
 
  * Do not use parsers
 
@@ -55,6 +89,7 @@ forEach($listItems as $item){
 	$items[] = $item; // Add it to array
 }
 ```
+
 ---
 
 ### Unpredictable scraping path
