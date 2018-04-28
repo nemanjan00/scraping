@@ -321,8 +321,6 @@ unzip app.zip
 wget https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download
 mv download dex2jar-2.0.zip
 unzip dex2jar-2.0.zip
-
-# make dex2jar executable
 chmod +x ./dex2jar-2.0/d2j-dex2jar.sh
 chmod +x ./dex2jar-2.0/d2j_invoke.sh
 
@@ -334,6 +332,8 @@ wget https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1
 
 # view java code
 java -jar jd-gui-1.4.0.jar ./classes-dex2jar.jar
+```
+
 ---
 
 ### Getting SWF application source code (almost)
