@@ -308,6 +308,32 @@ js-beautify -f file.js -o output.js
 
 ### Getting Android application source code (almost)
 
+ * [jd-gui](http://jd.benow.ca/) is tool for decompiling (almost) JAR files
+
+ * [dex2jar](https://github.com/pxb1988/dex2jar) turns 
+
+```bash
+# unzip apk
+mv app.apk app.zip
+unzip app.zip
+
+# get dex2jar
+wget https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download
+mv download dex2jar-2.0.zip
+unzip dex2jar-2.0.zip
+
+# make dex2jar executable
+chmod +x ./dex2jar-2.0/d2j-dex2jar.sh
+chmod +x ./dex2jar-2.0/d2j_invoke.sh
+
+# dex2jar
+./dex2jar-2.0/d2j-dex2jar.sh ./classes.dex
+
+# get jd-gui
+wget https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1.4.0.jar
+
+# view java code
+java -jar jd-gui-1.4.0.jar ./classes-dex2jar.jar
 ---
 
 ### Getting SWF application source code (almost)
