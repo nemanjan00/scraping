@@ -59,8 +59,6 @@ layout: false
 
  * Bonus: Android application reversing
 
- * Bonus: SWF application reversing
-
  * Bonus: Sniffing HTTP/HTTPS
 
 ---
@@ -336,12 +334,59 @@ java -jar jd-gui-1.4.0.jar ./classes-dex2jar.jar
 
 ---
 
-### Getting SWF application source code (almost)
+### Sniffing HTTP/HTTPS
+
+ * mitmproxy
+
+```bash
+# make computer act as a router
+sudo sysctl -w net.ipv4.ip_forward=1
+
+# forward http/https to mitmproxy
+sudo iptables -t nat -A PREROUTING -i wlp2s0 -p tcp --dport 443 -j REDIRECT --to-port 8080
+sudo iptables -t nat -A PREROUTING -i wlp2s0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+
+# start mitmproxy
+mitmproxy --mode transparent --set showhost=true
+```
+
+ * go to [mitm.it](http://mitm.it) and install cert
+
+ * Profit! 
+
+ * To get curl command, ":export.clip curl @focused"
 
 ---
 
-### Sniffing HTTP/HTTPS
+### curl link to php
 
+ * You can copy curl command in developer tools, under network tab and from mitmproxy
+
+ * [curl-cli2php](https://github.com/nemanjan00/curl-cli2php)
+
+```php
+╭─nemanjan00@nemanjan00-laptop  ~/curl-bash2php  ‹master› 
+╰─$ php cli2php.php curl 'https://github.com/nemanjan00/curl-cli2php/blob/master/cli2php.php' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36' -H 'Referer: https://github.com/new' --compressed
+<?php
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://github.com/nemanjan00/curl-cli2php/blob/master/cli2php.php");
+
+$headers = [
+	"Accept-Encoding: gzip, deflate, sdch",
+	"Upgrade-Insecure-Requests: 1",
+	"User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36",
+	"Referer: https://github.com/new",
+];
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($ch, CURLOPT_ENCODING, '');curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec ($ch);
+curl_close($ch);
+
+echo $server_output; 
+
+```
 
 ---
 layout: true
