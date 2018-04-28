@@ -75,7 +75,53 @@ layout: false
 
  * Press Ctrl + U (chrome) / Type "view-source:" before address (firefox)
 
- * Ctrl+Shift+I, Network tab and refresh
+---
+
+### HTTP requests from JavaScript / forms? 
+
+ * Can be sniffed using Chrome Developer Tools
+
+  * Ctrl + Shift + i
+
+  * Network tab
+
+  * Disable cache
+
+  * Enable "Preserve log" (only for forms)
+
+  * Pick XHR filter (only for JS requests)
+
+  * Trigger request
+
+---
+
+### Websockets
+
+ * Websock = Socket (Full Duplex, Persistant) over HTTP
+
+ * Can be sniffed using Chrome Developer Tools
+
+  * Ctrl + Shift + i
+
+  * Network tab
+
+  * Disable cache
+
+  * Pick WS filter
+
+  * Refresh page
+
+  * Pick websocket
+
+ * Easiest to scrape using Asynchronous Languages
+
+---
+
+### Local storage
+
+ * You can just delete all content from local storage and figure our how it is filled
+
+ * You can read local storage from browser profile
 
 ---
 
@@ -99,7 +145,6 @@ forEach($listItems as $item){
 	$items[] = $item; // Add it to array
 }
 ```
-
 ---
 
 ### Unpredictable scraping path && no branching
@@ -145,9 +190,7 @@ forEach($listItems as $item){
 
 ---
 
-### Websockets
-
- * Websock = Socket (Full Duplex, Persistant) over HTTP
+### HTTP headers
 
 ---
 
@@ -156,6 +199,14 @@ forEach($listItems as $item){
 ---
 
 ### Anti antiscraping
+
+---
+
+### Uglified JavaScript
+
+---
+
+### Webpack
 
 ---
 layout: true
