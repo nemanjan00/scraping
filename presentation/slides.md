@@ -198,6 +198,10 @@ forEach($listItems as $item){
 
 ---
 
+### Keep calm and fuzz input
+
+---
+
 ### HTTP headers
 
 ---
@@ -219,10 +223,6 @@ forEach($listItems as $item){
 ---
 
 ### Webpack
-
----
-
-### Keep calm and fuzz input
 
 ---
 
