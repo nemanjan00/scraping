@@ -147,5 +147,18 @@ layout: true
 class: center, middle
 ---
 
+### Websockets
+
+
+---
+
+### Binary search
+
+---
+
+### Anti antiscraping
+
+---
+
 # Now ask questions or/and go away
 ## nemanjan00@gmail.com
