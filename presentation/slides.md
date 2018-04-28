@@ -157,7 +157,7 @@ forEach($listItems as $item){
 
 ### Unpredictable scraping path && no branching
 
-* Synchronous languages
+* Synchronous languages (PHP in my case)
 
 #### Pros
 
@@ -178,7 +178,7 @@ forEach($listItems as $item){
 
 ### Predictable scraping path || a lot of branching 
 
-* Asynchronous languages
+* Asynchronous languages (Node.JS in my case)
 
 #### Pros
 
@@ -202,6 +202,10 @@ forEach($listItems as $item){
 
 ---
 
+### Cookie storage
+
+---
+
 ### Binary search
 
 ---
@@ -219,7 +223,6 @@ forEach($listItems as $item){
 ---
 
 ### Keep calm and fuzz input
-
 
 ---
 
