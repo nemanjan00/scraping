@@ -275,9 +275,33 @@ sudo npm install -g js-beautify
 js-beautify -f file.js -o output.js
 ```
 
+```javascript
+// original
+!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("jquery"),require("popper.js")):"function"==typeof define&&define.amd?define(["exports","jquery","popper.js"],e):e(t.bootstrap={},t.jQuery,t.Popper)}(this,function(t,e,c){"use strict";function i(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}function o(t,e,n){return e&&i(t.prototype,e),n&&i(t,n),t}function h(r){for(var t=1;t<arguments.length;t++){var s=null!=arguments[t]?arguments[t]:{},e=Object.keys(s);"function"==typeof Object.getOwnPr...
+```
+
+```javascript
+// output
+! function(t, e) {
+    "object" == typeof exports && "undefined" != typeof module ? e(exports, require("jquery"), require("popper.js")) : "function" == typeof define && define.amd ? define(["exports", "jquery", "popper.js"], e) : e(t.bootstrap = {}, t.jQuery, t.Popper)
+}(this, function(t, e, c) {
+    "use strict";
+
+    function i(t, e) {
+        for (var n = 0; n < e.length; n++) {
+            var i = e[n];
+			...
+```
+
 ---
 
 ### Webpack
+
+ * If there is \*.bundle.js, it is probbably webpack
+
+ * A lot of people do not use minification
+
+ * If they do, you just need refactoring tool that you can use to change nonsense names like a/b/c to something that means anything. 
 
 ---
 
