@@ -210,21 +210,70 @@ forEach($listItems as $item){
 
 ### HTTP headers
 
+ * Content-Length - Length of POST payload (update/remove this if server never responds or invalid request)
+
+ * User-Agent - Information about browser
+
+ * Accept-Encoding:gzip - This is what makes server compress response
+
+ * Content-Type - This tells server what payload is
+
+ * Connection:Keep-Alive - Server will respond to this with Connection header. If server responds with Keep-Alive, you can abuse this to use one connection for multiple requests
+
+ * Authorization: This one is obvious
+
 ---
 
 ### Cookie storage
+
+#### PHP
+
+ * Cookiejar (with curl)
+
+#### Node.JS
+
+ * [tough-cookie](https://github.com/salesforce/tough-cookie)
+
+ * [Reading browser cookies](https://github.com/combistack/chrome/blob/master/cookies/site.js)
 
 ---
 
 ### Binary search
 
+ * Sometimes you need to guess page number/last id/whatewer.
+
+ * Multiply input by 10, until you get error
+
+ * Do binary search from 0 to current input
+
+<img src="./assets/binary.png" width="50%">
+
 ---
 
 ### Anti antiscraping
 
+ * KISS (keep it simple, stupid)
+
+ * Focus on detecting errors instead of preventing them
+
+ * Retry
+
+ * Example: Write code so that it takes list of proxies, takes random one for each request and in case of error retries it until it gets correct result. 
+
+ * Detect error by checking if expected content is on page. 200 is not always good sign. 
+
+ * Make sure you have TTL
+
 ---
 
 ### Uglified JavaScript
+
+ * [js-beautify](https://www.npmjs.com/package/js-beautify)
+
+```bash
+sudo npm install -g js-beautify
+js-beautify -f file.js -o output.js
+```
 
 ---
 
