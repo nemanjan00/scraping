@@ -142,13 +142,12 @@ forEach($listItems as $item){
  * Sometimes hard to track status
 
 .footnote[[Example](https://github.com/nemanjan00/scraping/tree/master/example2) and [scraper](https://github.com/nemanjan00/scraping/tree/master/example2-scraper)]
----
-layout: true
-class: center, middle
+
 ---
 
 ### Websockets
 
+ * Websock = Socket (Full Duplex, Persistant) over HTTP
 
 ---
 
@@ -158,6 +157,9 @@ class: center, middle
 
 ### Anti antiscraping
 
+---
+layout: true
+class: center, middle
 ---
 
 # Now ask questions or/and go away
