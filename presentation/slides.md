@@ -47,6 +47,8 @@ layout: false
 
 ### What is this talk about? 
 
+ * Web scraping
+
  * Technology you are going to have to deal with
 
  * Tools for understanding what you are dealing with
@@ -54,6 +56,10 @@ layout: false
  * Ways for scraping that turned out to be working for me
 
  * Discussion about which solution is working for which problem
+
+ * Bonus: Android application reversing
+
+ * Bonus: Sniffing HTTP/HTTPS
 
 ---
 
@@ -207,6 +213,19 @@ forEach($listItems as $item){
 ---
 
 ### Webpack
+
+---
+
+### Keep calm and fuzz input
+
+
+---
+
+### Getting Android application source code (almost)
+
+---
+
+### Sniffing HTTP/HTTPS
 
 ---
 layout: true
