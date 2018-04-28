@@ -200,6 +200,12 @@ forEach($listItems as $item){
 
 ### Keep calm and fuzz input
 
+ * Two golden rules
+
+  * Try to manipulate very single input
+
+  * If it works without non-crucial input, remove it
+
 ---
 
 ### HTTP headers
