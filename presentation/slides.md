@@ -11,7 +11,7 @@ class: center, middle
 .footnote[<i class="fa fa-pencil fa-fw"></i> Created by [nemanjan00](https://github.com/nemanjan00/)]
 ---
 layout: false
-### What am I? <i class="fa fa-user fa-fw"></i> 
+### Who am I? <i class="fa fa-user fa-fw"></i> 
 
  * Web developer
 
@@ -102,7 +102,7 @@ forEach($listItems as $item){
 
 ---
 
-### Unpredictable scraping path
+### Unpredictable scraping path && no branching
 
 * Synchronous languages
 
@@ -123,9 +123,23 @@ forEach($listItems as $item){
 .footnote[[Example](https://github.com/nemanjan00/scraping/tree/master/example1) and [scraper](https://github.com/nemanjan00/scraping/tree/master/example1-scraper)]
 ---
 
-### Predictable scraping path
+### Predictable scraping path || a lot of branching 
 
 * Asynchronous languages
+
+#### Pros
+
+ * Crazy fast
+
+ * Simpler to scale
+
+ * Powerful error handling
+
+#### Cons
+
+ * Can be too fast
+
+ * Sometimes hard to track status
 
 .footnote[[Example](https://github.com/nemanjan00/scraping/tree/master/example2) and [scraper](https://github.com/nemanjan00/scraping/tree/master/example2-scraper)]
 ---
