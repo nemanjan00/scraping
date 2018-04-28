@@ -303,7 +303,7 @@ js-beautify -f file.js -o output.js
 
  * If they do, you just need refactoring tool that you can use to change nonsense names like a/b/c to something that means anything. 
 
- * It contains array of modules wher modules requeire each other using index in array. 
+ * It contains array of modules wher modules requeire each other using index in array. (you can set breakpoing on that function and get modules or you can copy array to your JS)
 ---
 
 ### Getting Android application source code (almost)
