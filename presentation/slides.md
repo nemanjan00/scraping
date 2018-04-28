@@ -59,6 +59,8 @@ layout: false
 
  * Bonus: Android application reversing
 
+ * Bonus: SWF application reversing
+
  * Bonus: Sniffing HTTP/HTTPS
 
 ---
