@@ -293,6 +293,18 @@ js-beautify -f file.js -o output.js
 
 ---
 
+### Webpack
+
+ * If there is \*.bundle.js, it is probbably webpack
+
+ * A lot of people do not use minification
+
+ * If they do, you just need refactoring tool that you can use to change nonsense names like a/b/c to something that means anything. 
+
+ * It contains array of modules wher modules requeire each other using index in array. (you can set breakpoing on that function and get modules or you can copy array to your JS)
+
+---
+
 ### Bundled javascript (debundle)
 
 ```bash
@@ -320,17 +332,6 @@ dist/
 4 directories, 7 files
 ```
 
----
-
-### Webpack
-
- * If there is \*.bundle.js, it is probbably webpack
-
- * A lot of people do not use minification
-
- * If they do, you just need refactoring tool that you can use to change nonsense names like a/b/c to something that means anything. 
-
- * It contains array of modules wher modules requeire each other using index in array. (you can set breakpoing on that function and get modules or you can copy array to your JS)
 ---
 
 ### Getting Android application source code (almost)
