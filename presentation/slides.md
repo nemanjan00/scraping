@@ -293,6 +293,35 @@ js-beautify -f file.js -o output.js
 
 ---
 
+### Bundled javascript (debundle)
+
+```bash
+$ curl https://raw.githubusercontent.com/1egoman/debundle/master/test_bundles/browserify/bundle.js > bundle.js
+$ curl https://raw.githubusercontent.com/1egoman/debundle/master/test_bundles/browserify/debundle.config.json > debundle.config.json
+$ cat debundle.config.json
+{
+  "type": "browserify",
+  "knownPaths": {}
+}
+$ debundle -i bundle.js -o dist/ -c debundle.config.json
+$ tree dist/
+dist/
+├── index.js
+└── node_modules
+    ├── number
+    │   └── index.js
+    └── uuid
+        ├── index.js
+        ├── lib
+        │   ├── bytesToUuid.js
+        │   └── rng.js
+        ├── v1.js
+        └── v4.js
+4 directories, 7 files
+```
+
+---
+
 ### Webpack
 
  * If there is \*.bundle.js, it is probbably webpack
