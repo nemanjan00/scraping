@@ -200,7 +200,7 @@ forEach($listItems as $item){
 
  * Two golden rules
 
-  * Try to manipulate very single input
+  * Try to manipulate every single input
 
   * If it works without non-crucial input, remove it
 
